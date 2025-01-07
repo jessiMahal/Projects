@@ -1,0 +1,32 @@
+#Looping Over a List
+countries = ['US','Canada','Malaysia','UAE']
+for country in countries:
+    print(country,'contains',len(country),'letters!')
+
+#print i as long as i is less than 6
+i =1
+while i<6:
+    print(i)
+    i = i+ 1
+	
+#with break function
+i = 1
+while i <6:
+    print(i)
+    if i ==4:
+        break
+    i +=1
+
+#with continue statement
+i = 0
+while i < 10:
+    i += 1
+    if i == 5:
+        continue
+    print(i)	
+
+#print 1 to 10 using while loop
+i = 1
+while i <= 10:
+    print(i)
+    i +=1
