@@ -1,0 +1,38 @@
+a = int(input('input a value- '))
+b = int(input('input b value- '))
+if a<b:
+    print('b is bigger than a')
+elif a == b:
+    print('both are equal')
+else:
+    print('a is bigger than b')
+	
+# two different style - output is same
+
+a = 2
+b = 4
+print('A') if a > b else print('B')
+
+#or
+
+a = 2
+b = 4
+if a > b:
+    print('A')
+else:
+    print('B')
+	
+#One line if else statement, with 3 conditions:
+a = 10
+b = 90
+print('A') if a > b else print('=') if a==b else print('B')
+
+#nested if statements
+x = 10
+if x >= 10:
+  print('above ten')
+  if x > 20:
+    print('above 20')
+  else:
+    print('not above 20')
+	
