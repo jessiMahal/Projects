@@ -1,0 +1,31 @@
+#nested loops
+adj = ['red','big','tasty']
+fruits = ['apple','banana','cherry']
+for x in adj:
+    for y in fruits:
+        print(x,y)
+
+#to avoid getting an error
+for x in [0,1,3]:
+	pass
+
+#creating a function
+#A function is a block of code which is only runs when it is called.
+
+def my_code():
+    print('Hello, this is my code')
+my_code()
+
+#creating a function
+#A function is a block of code which is only runs when it is called.
+# Arguments - information can be passed into functions as arguments.
+
+def my_code(fname):
+    print(fname + ' ref:')
+my_code('Email')
+my_code('Phone no')
+my_code('Address')
+
+def my_part(*kids):
+    print("the youngest child is " +kids[3])
+my_part("emil","hello","linus","partsds")
