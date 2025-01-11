@@ -1,0 +1,81 @@
+def my_kids(**kids):
+    print("My kid first name is " + kids["Fname"] + kids["lname"])
+my_kids(Fname="Vishvjeet", lname =" singh")
+
+def my_function(**kid):
+    print("my kid name is" +" " +kid["fname"])
+my_function(fname1="vishu", fname="tejas")
+
+
+#call function without argument
+def my_function(gender = "man"):
+    print("I am" +" "+ gender)
+my_function("girl")
+my_function("boy")
+my_function()
+my_function("woman")
+
+
+# passing a list as an argument
+def my_function(food):
+    for i in food:
+        print(i)
+fruits =["apple", "banana", "cherry"]
+my_function(fruits)
+
+#another example
+def my_film(watch):
+    for i in watch:
+        print(i)
+movie =["j","k","l"]
+my_film(movie)
+
+#return values
+def my_function(x):
+    return 5 * x
+print(my_function(3))
+print(my_function(5))
+print(my_function(6))
+
+#Any argument before the / , are positional-only, 
+# and any argument after the *,are keyword-only.
+def my_function(a,b,/,*,c,d):
+    print(a+b+c+d)
+my_function(5,6,c=7,d=8)
+
+#star pattern right angle
+#define row
+#print("statement to be printed", 
+#end='white space or any character or string ')
+
+
+rows = 5
+#outer loop
+for i in range(rows):
+    #nested loop
+    for j in range(i+1):
+        print("*", end="")
+    #print new line after each row
+    print()
+	
+#new example
+#define row
+rows = 5
+#outer loop
+for i in range(rows):
+    #nested loop
+    for j in range(i+1):
+        print(j+1, end="")
+    #print new line after each row
+    print()
+
+#another expmaple to print value in rows while for loop
+rows=int(input("Enter value: "))
+for i in range(0,rows):
+    for j in range(0,i+1):
+        print(j+1, end="")
+    print("")
+
+
+
+
