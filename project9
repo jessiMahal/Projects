@@ -16,7 +16,7 @@ elif score >= 60:
 else: grade = "F"
 print("Your grade is: ", grade)
 
-#Checking if a year is a leap year
+# Checking if a year is a leap year
 year = int(input("enter year: "))
 if year % 4 ==0:
     if year % 100 ==0:
@@ -24,6 +24,14 @@ if year % 4 ==0:
             print(year ," is a leap year")
         else:
             print(year, "is not a leap year")
+
+# Another example 
+year = int(input("Enter year: "))
+if year % 400 == 0 and year % 100 == 0:
+    print(year, "is a leap year")
+elif year % 4 == 0 and year % 100 != 0:
+    print("{0} is a leap year".format(year))
+else: print("{0} is not a leap year".format(year))
     else:
         print(year, "is a leap year")
 else:
