@@ -1,0 +1,31 @@
+marks = int(input("input "))
+if marks >= 90:
+    print("A")
+elif marks >=75:
+    print("B")
+elif marks >=65:
+    print("C")
+
+score = int(input("Enter your score: "))
+if score >= 90:
+    grade = "A"
+elif score >= 70:
+    grade = "B"
+elif score >= 60:
+    grade = "C"
+else: grade = "F"
+print("Your grade is: ", grade)
+
+#Checking if a year is a leap year
+year = int(input("enter year: "))
+if year % 4 ==0:
+    if year % 100 ==0:
+        if year % 400 ==0:
+            print(year ," is a leap year")
+        else:
+            print(year, "is not a leap year")
+    else:
+        print(year, "is a leap year")
+else:
+    print(year, "is not a leap year")
+
