@@ -1,0 +1,35 @@
+string1 = input("Enter word: ")
+char = input("Enter char: ")
+if char in string1:
+    print(char, " in ", string1)
+else:
+    print(char, "not in ", string1)
+
+# only takes character
+string1 = input("Enter word: ")
+if any(char.isdigit() for char in string1):
+    print("invalid, type only character")
+char1 = input("Enter char: ")
+if any(char.isdigit() for char in char1):
+    print("Invalid, type only character ")
+elif char1 in string1:
+        print(char1, " in ", string1)
+else:
+        print(char1, "not in ", string1)
+
+
+
+name = input("Enter name: ")
+if name.isdigit():
+    print("invalid entry")
+char = input("Enter char: ")
+if char.isdigit():
+    print("Again invalid entry")
+if char in name:
+        print("ok")
+else:
+        print("try again")
+#result
+Enter name: hello
+Enter char: j
+try again
