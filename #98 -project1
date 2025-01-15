@@ -1,0 +1,93 @@
+#98
+
+#1 - print hello
+print("Hello")
+
+#2- add two numbers
+num1 = 10
+num2 = 10
+sum = int(num1 + num2)
+print(sum)
+or
+num1 = int(input("Enter num 1: "))
+num2 = int(input("Enter num 2: "))
+sum = num1 + num2
+print(sum)
+
+#3 - find the square root
+inter_value = int(input("Enter value: "))
+square_root = inter_value ** 0.5
+print(square_root)
+
+#4- calculate the area of triangle (A = 1/2 × b × h)
+tri_base = int(input("enter base: "))
+tri_height = int(input("enter height: "))
+area = 0.5 * tri_base * tri_height
+print(area)
+
+#5 - to Swap Two Variables
+x = int(input("Enter value: "))
+y = int(input("Enter 2nd value: "))
+temp = x
+x = y
+y = temp
+
+print("The value of x after swapping: {}".format(x))
+print("The value of y after swapping: {}".format(y))
+
+or
+
+x = int(input("Enter value: "))
+y = int(input("Enter 2nd value: "))
+x, y = y, x
+print("x", x)
+print("y", y)
+
+#6 - to Generate a Random Number
+import random
+print(random.randint(0,9))
+
+#7 - Kilometers to Miles
+km = float(input("Enter kms: "))
+#1 km == .62 miles
+miles = km * 0.62
+print("Conerted kilemeters to miles are: ", miles)
+
+#convert
+cel = float(input("Enter celsius value to convert: "))
+#fahrenheit = celsius * 1.8 + 32
+
+fahrenheit = (cel * 1.8) + 32
+print("Fahrenheit value is :", fahrenheit)
+
+fah = float(input("Enter Fahrenheit value to convert: "))
+celsius = (fah - 32) / 1.8
+print("Celsius value: ", celsius)
+
+#Program to Check if a Number is Positive, Negative or 0
+num = int(input("Enter number: "))
+if 0 < num :
+    print("Positive")
+elif -0 > num:
+    print("Negative")
+else :
+    print("zero")
+
+or
+num = int(input("Enter number: "))
+if num > 0:
+    print("Positive")
+elif num == 0:
+    print("zero")
+else :
+    print("Negative")
+
+or 
+num = int(input("Enter number: "))
+if num >= 0:
+    if num == 0:
+        print("zero")
+    else :
+        print("Positive")
+else:
+    print("Negative")
