@@ -1,0 +1,31 @@
+#number is positive, negative or 0
+num = float(input("Enter number: "))
+if num >= 0:
+    if num == 0:
+        print("zero")
+    else:
+        print("positive")
+else:
+    print("Negative")
+#or
+num1 = float(input("Enter number:"))
+if num > 0:
+    print("Positive")
+elif num == 0:
+    print("zero")
+else:
+    print("negative")
+	
+#find the largest among three numbers
+num1 = int(input("enter 1st no: "))
+num2 = int(input("enter 2nd no: "))
+num3 = int(input("enter 3rd no: "))
+if (num1 >= num2) and (num1 >= num3):
+   largest = num1
+elif (num2 >= num1) and (num2 >= num3):
+   largest = num2
+else:
+   largest = num3
+
+print(largest)
+
