@@ -1,0 +1,100 @@
+#to find the factors of a number
+def print_factors(x):
+    print("the factors of ", x ,"are ")
+    for i in range(1, x+1):
+        if x % i == 0:
+            print(i)
+num = int(input("enter: "))
+print_factors(num)
+enter: 8
+result:
+
+enter: 8
+the factors of  8 are 
+1
+2
+4
+8
+
+#to Print all Prime Numbers in an Interval
+range1 = int(input("lower: "))
+range2 = int(input("upper: "))
+print( range1, " from to ", range2)
+for i in range(range1, range2+1):
+    if i > 1:
+        for l in range(2, i):
+            if i % l == 0:
+                break
+        else:
+            print(i)
+			
+output
+lower: 1
+upper: 10
+1  from to  10
+2
+3
+5
+7
+
+lower = int(input("Enter lower value: "))
+upper = int(input("Enter upper value: "))
+print(lower, " value and ", upper, " value prime numbers in an interval")
+print("-------------------------------------------------------")
+for i in range(lower, upper+1):
+    if i > 1:
+        for l in range(2, i):
+            if i % l == 0:
+                break
+        else:
+            print(i)
+
+#factorial of a number using loop
+
+num = int(input("Enter num: "))
+factorial = 1
+if num < 0:
+    print("sorry, try again")
+elif num == 0:
+    print("0 is 1, use above 1")
+else:
+    for i in range(1,num+1):
+        factorial = factorial * i
+    print("The factorial of ", num, "is ", factorial)
+	
+result
+Enter num: -1
+sorry, try again
+#
+Enter num: 5
+The factorial of  5 is  120
+#
+Enter num: 0
+0 is 1, use above 1
+
+or 
+num = int(input("Enter num: "))
+fac = 1
+if num <0:
+    print("no answer")
+else:
+    for i in range(1, num+1):
+        fac = fac * i
+        print("answer", fac)
+		
+#Display the multiplication Table
+num = int(input("Table: "))
+table = int(input("Upto: "))
+for i in range(1, table+1):
+    for j in range(1, num+1):
+        j = num * i
+    print(num, "x" ,i, "=", j)
+
+result
+Table: 5
+Upto: 4
+5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+5 x 4 = 20
+        
