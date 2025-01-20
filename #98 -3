@@ -64,3 +64,146 @@ upto: 3
 2 to power 1 = 2
 2 to power 2 = 4
 2 to power 3 = 8
+
+num = int(input("num: "))
+print( pow(num,3))
+#same output
+print(num ** 3)
+
+#using lambda function
+# lambda parameters: expression
+
+plus = lambda x: x+2
+mul = lambda x: x*2
+max_value = lambda x, y: x if x > y else y
+min_value = lambda x, y: x if x < y else y
+full_name = lambda first, last: first + " " + last
+is_even = lambda x: x%2==0
+age_check = lambda age: True if age >= 20 else False
+
+print(plus(2))
+print(mul(3))
+print(max_value(3,4))
+print(min_value(4,5))
+print(full_name("john", "cena"))
+print(is_even(4))
+print(age_check(20))
+
+#map(function, collection)
+def temps(temp):
+    return (temp * 9/5) + 32
+
+celsius_temps = [0.0,10.0,20.0,30.0,40.0,50.0]
+fahrenheit_temps = map(temps,celsius_temps)
+
+print(fahrenheit_temps)
+
+-------------
+#map(function, collection)
+def temps(temp):
+    return (temp * 9/5) + 32
+
+celsius_temps = [0.0,10.0,20.0,30.0,40.0,50.0]
+fahrenheit_temps = map(temps,celsius_temps)
+
+for temp in fahrenheit_temps:
+    print(temp)
+	
+#result
+32.0
+50.0
+68.0
+86.0
+104.0
+122.0
+
+----------
+#map(function, collection)
+def temps(temp):
+    return (temp * 9/5) + 32
+
+celsius_temps = [0.0,10.0,20.0,30.0,40.0,50.0]
+fahrenheit_temps = list(map(temps,celsius_temps))
+print(fahrenheit_temps)
+
+#result
+[32.0, 50.0, 68.0, 86.0, 104.0, 122.0]
+--------------------
+#map(function, collection)
+# lambda (parameters: expression)
+
+celsius_temps = [0.0,10.0,20.0,30.0,40.0,50.0]
+fahrenheit_temps = list(map(lambda temp: (temp *9/5)+32,celsius_temps))
+print(fahrenheit_temps)
+or
+celsius_temps = [0.0,10.0,20.0,30.0,40.0,50.0]
+fahrenheit_temps = map(lambda temp: (temp *9/5)+32,celsius_temps)
+print(list(fahrenheit_temps))
+
+-------------
+#Display Powers of 2 Using Anonymous and map Function
+#map(function, collection)
+def power(i):
+    return 2 ** i
+
+map_result = map(power, [1,2,3,4])
+
+print(list(map_result))
+# result
+[2, 4, 8, 16]
+--------------
+#map(function, collection)
+# lambda (parameters: expression)
+
+map_result = map(lambda i: 2**i, [1,2,3,4])
+
+print(list(map_result))
+----------------------
+map_result = map(lambda i: 1 + i, range(10))
+
+print(list(map_result))
+#result
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+------
+# map(function, collection)
+# lambda (parameters: expression)
+# add lists using map function
+
+map_result = list(map(lambda x , y: x+y,[1,2,3,4], [5,6,7,8]))
+print(map_result)
+
+or
+list1 = [1,2,3,4]
+list2 = [5,6,7,8]
+map_result = map(lambda x , y: x+y,list1, list2)
+print(list(map_result))
+
+---------------------------------
+# filter(function, collection)
+# lambda (parameters: expression)
+
+list1=[1,2,3,4,5,6,7,8,9,10]
+
+def num1(x):
+    if x % 2 == 0:
+        return True
+    return False
+result = filter(num1,list1)
+print(list(result))
+#result
+[2, 4, 6, 8, 10]
+
+or-------------------------------------
+# filter(function, collection)
+# lambda (parameters: expression)
+
+list1=[1,2,3,4,5,6,7,8,9,10]
+result = filter(lambda x: x % 2 == 0,list1)
+print(list(result))
+#result
+[2, 4, 6, 8, 10]
+
+-----------------------------------------
+
+
