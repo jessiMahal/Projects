@@ -1,0 +1,66 @@
+# print if the no is armstrong number or not
+number = int(input("enter number: "))
+length = len(str(number))
+
+temp = number
+sum = 0
+while temp > 0:
+    digit = temp % 10
+    sum += digit ** length
+    temp = temp // 10
+print("number is ", number, " and sum is" , sum)
+if sum == number:
+    print("yes")
+else:
+    print("no")
+
+#sum of two numbers
+num1 = int(input("Enter number 1: "))
+num2 = int(input("Enter number 2: "))
+print("sum of {} and {} is {}".format(num1,num2,num1+num2))
+
+#add numbers 
+count = int(input("Enter the number count: "))
+sum = 0
+for num in range(count):
+    number = int(input())
+    sum = sum + number
+print("total of all numbers: ", sum)
+
+# display powers of given power.
+num = int(input("enter number: "))
+power = int(input("enter power: "))
+print("print {} and {} is {}". format(num, power,num ** power))
+
+#result
+enter number: 7
+enter power: 7
+print 7 and 7 is 823543
+
+# display powers of given number and given power,  loop power.
+num = int(input("enter number: "))
+upto = int(input("upto: "))
+for i in range(1, upto+1):
+    print( "{} x {} = {}". format(num, i, num ** i))
+#output
+enter number: 2
+upto: 5
+2 x 1 = 2
+2 x 2 = 4
+2 x 3 = 8
+2 x 4 = 16
+2 x 5 = 32
+
+modified
+# display powers of given number and given power,  loop power.
+num = int(input("enter number: "))
+upto = int(input("upto: "))
+for i in range(0, upto+1):
+    print( "{} to power {} = {}". format(num, i, num ** i))
+#result
+enter number: 2
+upto: 3
+2 to power 0 = 1
+2 to power 1 = 2
+2 to power 2 = 4
+2 to power 3 = 8
