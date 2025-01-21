@@ -1,0 +1,31 @@
+# filter(function, collection)
+# lambda (parameters: expression)
+
+list1=[12,65,54,39,102,339,221]
+result = filter(lambda x: x % 13 == 0,list1)
+print(list(result))
+
+#result
+[65, 39, 221]
+
+
+#python calculator
+
+a_operator = input("+ - / * : ")
+input_value1= float(input("Enter 1st no. value: "))
+input_value2= float(input("Enter 2nd no. value: "))
+
+if a_operator == "+" :
+    value = input_value1 + input_value2
+    print(round(value))
+elif a_operator == "-":
+    value = input_value1 - input_value2
+    print(round(value))
+elif a_operator == "*":
+    value = input_value1 * input_value2
+    print(round(value, 3))
+elif a_operator == "/":
+    value = input_value1 / input_value2
+    print(round(value,3))
+else:
+    print("Wrong entry")
