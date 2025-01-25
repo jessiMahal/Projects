@@ -1,0 +1,37 @@
+
+def my_function(name): #parameters
+
+#return = statement used to end a function and
+          #send a result back to the caller
+    print(f"hello {name}")
+    print(f"today is {name} birthday")
+    print(f"Welcome to {name} python class")
+
+my_function("john") #arguments
+
+def create_name(first,last):
+    first = first.capitalize()
+    last = last.capitalize()
+    return first + " "+ last
+
+full_name = create_name("john", "cena")
+print(full_name)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
