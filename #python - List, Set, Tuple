@@ -1,0 +1,145 @@
+#weight input calculator
+
+weight = float(input("Enter your weight: "))
+unit = input("convert from kgs or Lbs (type K or L): ")
+
+if unit == "K":
+    weight = weight * 2.205
+    unit = "Lbs"
+    print (f" your weight is {round(weight, 1)} in {unit}")
+elif unit == "L":
+    weight = weight / 2.205
+    unit = "Kgs"
+    print(f"Your weight is {round (weight, 1)} in {unit}")
+else:
+    print("Type right unit")
+
+#output
+Enter your weight: 20
+convert from kgs or Lbs (type K or L): K
+your weight is 44.1 in Lbs
+
+--------------
+#to separate username and domain name
+
+email = input("enter your email: ")
+
+index = email.index("@")
+
+username = email[:index]
+domain = email[index + 1:]
+
+print(f" your username is {username} and domain is {domain}")
+
+------------------------------------------------
+------------------------------------------------
+
+def my_function(name): #parameters
+
+    print(f"hello {name}")
+    print(f"today is {name} birthday")
+    print(f"Welcome to {name} python class")
+
+my_function("jassi") #arguments
+
+
+
+def my_function(name): #parameters
+
+#return = statement used to end a function and
+          #send a result back to the caller
+    print(f"hello {name}")
+    print(f"today is {name} birthday")
+    print(f"Welcome to {name} python class")
+
+my_function("john") #arguments
+
+def create_name(first,last):
+    first = first.capitalize()
+    last = last.capitalize()
+    return first + " "+ last
+
+full_name = create_name("john", "cena")
+print(full_name)
+
+----------------
+
+#collection = single "variable" used  to store multiple values.
+# List = [] ordered and changeable. duplicates ok
+# Set = {} unordered and immutable, add/remove ok, no duplicate
+# Tuple = () ordered and unchangeable. duplicates. ok faster
+
+#fruits = ["apple", "orange", "banana", "coconut"]
+#print(fruits)
+#print(fruits[0])
+#print(fruits[:2])
+
+#for fruit in fruits:
+#    print(fruit)
+
+#print(dir(fruits))
+#print(help(fruits))
+#print(len(fruits))
+#print("apple" in fruits)
+
+# fruits[0] = "mango"
+# for fruit in fruits:
+#     print(fruit)
+
+#to add - we use append method
+#fruits.append("pineapple")
+
+# to remove - we use remove method
+#fruits.remove("apple")
+
+# to insert with position
+#fruits.insert(0, "pineapple")
+
+# to reverse in alphabetical order -- first we use sort and then reverse.
+
+# fruits.sort()
+#fruits.reverse()
+
+# to clear
+#fruits.clear()
+
+# to find index of listed particular values
+#print(fruits.index("apple"))
+
+#to count how many same value item in the list
+#print(fruits.count("banana"))
+###
+#set method - unordered list
+#
+# fruits = {"apple", "orange", "banana", "coconut"}
+
+#tuple
+fruits = ("apple", "orange", "banana", "coconut", "coconut")
+
+#print(fruits.index("apple"))
+#print(fruits.count("coconut"))
+#print(len(fruits))
+
+print(fruits)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
