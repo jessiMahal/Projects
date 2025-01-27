@@ -1,0 +1,40 @@
+#number guessing game
+
+import random
+
+low =1
+high =100
+guesses = 0
+number = random.randint(low,high)
+while True:
+    guess = int(input(f"Enter your guess in between ({low} - {high}): "))
+    guesses += 1
+
+    if guess < number:
+        print(f"Guess {guess} is too low")
+    elif guess > number:
+        print(f"Guess {guess} is too high")
+    else:
+        print(f"Guess {guess} is correct.")
+        break
+
+print(f"Total no of guesses {guesses}")
+
+#updated code
+import random
+low = int(input("enter low value: "))
+high = int(input("enter high value: "))
+attempts = 0
+number = random.randint(low,high)
+while True:
+    guess = int(input(f"enter your guess from {low} to {high}: "))
+    attempts += 1
+
+    if guess < number:
+        print("too low, try again!")
+    elif guess > number:
+        print("too high, try again!")
+    else:
+        print("Congratulations!!")
+        break
+print(f"total attempts {attempts}")
