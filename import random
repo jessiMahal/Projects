@@ -1,0 +1,21 @@
+import random
+
+my_list = ['rock', 'paper', 'hello']
+x = random.choice(my_list)
+print(x)
+
+cards = [1,2,3,4,5,6,7,9,'jack','hero','print']
+random.shuffle(cards)
+print(cards)
+
+
+my_newlist = random.randint(1,10)
+print(my_newlist)
+
+
+--------------
+import random
+#randint - include 100
+print(random.randint(1,100))
+#randrange - does not include 100(till 99)
+print(random.randrange(1,100))
