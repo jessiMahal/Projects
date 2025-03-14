@@ -27,3 +27,17 @@ for i in sum1:
 print("even {}".format(sum_even))
 print("odd {}" .format(sum_odd))
 
+#example
+i = 0
+sum_even = 0
+sum_odd = 0
+while i <= 10:
+    if i%2 == 0:
+        sum_even = sum_even+i
+    else:
+        sum_odd = sum_odd+i
+    i = i+1
+print("even {}".format(sum_even))
+print("odd {}" .format(sum_odd))
+
+
