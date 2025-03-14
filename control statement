@@ -1,0 +1,29 @@
+val = input("Enter the value: ")
+value_float = float(val)
+if value_float>100:
+    print("greater than 100")
+else:
+    print("lower than 100")
+
+or
+
+val = float(input("Enter the value: "))
+
+if val>100:
+    print("greater than 100")
+else:
+    print("lower than 100")
+
+  #new example:
+  sum1 = 1,2,3,4,5,6,7
+sum_even = 0
+sum_odd = 0
+for i in sum1:
+    if i%2 == 0:
+        sum_even = sum_even+i
+    else:
+        sum_odd = sum_odd+i
+
+print("even {}".format(sum_even))
+print("odd {}" .format(sum_odd))
+
