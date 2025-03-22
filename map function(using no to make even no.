@@ -1,0 +1,16 @@
+#map function
+
+#create the fucntion to map the data
+def even_number(num):
+    if num%2==1:
+        return num+1
+    else:
+        return num
+x = [23,34,445,656,676,787,8785]
+
+y =[]
+
+for num in x:
+    y.append(even_number(num))
+    
+print(y)
