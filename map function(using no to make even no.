@@ -10,7 +10,8 @@ x = [23,34,445,656,676,787,8785]
 
 y =[]
 
-for num in x:
-    y.append(even_number(num))
-    
+#for num in x:
+    #y.append(even_number(num))
+y= list(map(even_number,x))
+#y = [even_number(num) for num in x]    
 print(y)
